@@ -116,7 +116,7 @@ const Chats = () => {
                     placeholder="Text..."
                     onChange={(e) => setMessage(e.target.value)}
                   />
-                  <button className="btn btn-danger" type="submit">
+                  <button className="btn button2" type="submit">
                     Send
                   </button>
                 </form>
