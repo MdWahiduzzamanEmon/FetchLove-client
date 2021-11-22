@@ -100,3 +100,66 @@ background: linear-gradient(90deg, rgb(190, 252, 241) 0%,rgb(240, 83, 109) 100%)
     opacity: 0;
   }
 }
+
+.div-height{
+ height: 600px;
+ 
+  /* overflow-y: scroll; */
+}
+
+.height{
+ /* position: relative; */
+  height: 600px;
+}
+.send_fileld{
+  /* position: absolute;
+  bottom: 0; */
+  width: 100%;
+}
+
+.messageBox{
+  background-color: gainsboro;
+  /* width: 40%; */
+  clear: both;
+  border-radius:10px;
+ padding: 15px;
+ margin: 10px;
+ font-weight: 650;
+ text-align: left;
+ display:inline-block;
+
+}
+
+.right{
+  background-color: rgb(243, 93, 113);
+  float: right;
+}
+.left{
+  background-color: rgb(44, 207, 248);
+  float: left;
+}
+.button2{
+ width: 100px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+  color: #040407;
+  background: #d8419e;
+background: linear-gradient(90deg, rgb(190, 252, 241) 0%,rgb(240, 83, 109) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(155, 11, 112, 0.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  padding: 10px;
+}
+
+.dpImg{
+  border-radius:50%;
+ width: 50px;
+ height: 50px;
+ object-fit: cover;
+}
