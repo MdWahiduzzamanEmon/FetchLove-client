@@ -2,12 +2,12 @@ import React, { useEffect, useRef, useState } from 'react';
 import socketIO from "socket.io-client";
 import {useNavigate} from 'react-router'
 import useFirebase from '../../Hooks/useFirebase';
-import {Dropdown, Form} from 'react-bootstrap'
+import {Dropdown, Form, Spinner} from 'react-bootstrap'
 import Message from '../Message/Message';
 import ReactScrollToBottom from "react-scroll-to-bottom";
 
 
-const ENDPOINT = "http://localhost:500/";
+const ENDPOINT = "https://ancient-springs-31397.herokuapp.com/";
 let socket;
 const Chats = () => {
    
@@ -23,7 +23,6 @@ const Chats = () => {
         logOut();
     }
 
-    console.log(chatMessages);
     
     const send = (e) => {
         e.preventDefault()
@@ -43,7 +42,6 @@ const Chats = () => {
              // alert("connected");
              setid(socket.id);
            });
-           console.log(socket);
            socket.emit("joined", { name });
 
            socket.on("welcome", (data) => {
@@ -75,7 +73,7 @@ const Chats = () => {
     return (
       <>
         {isloading ? (
-          "loading"
+          <Spinner animation="grow" variant="danger" />
         ) : (
           <div>
             <section className="text-end d-flex me-4 justify-content-end align-items-center">
