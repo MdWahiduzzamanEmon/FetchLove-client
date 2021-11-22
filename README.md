@@ -1,4 +1,4 @@
-# Fetch Love
+# Fetch Love (Online Chat Application)
 
 This project live link [Click Here](https://fetchlove.web.app/).
 
